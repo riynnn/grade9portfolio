@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff; /* Dark Background */
+    color: #121212; /* White Text */
+    transition:0.3s;
+}
+
+.dark-mode {
+    background-color: #121212 !important; /* Dark Background */
+    color: #ffffff; /* White Text */
+}
+
+.top-bar {
+    background-color: #212121; /* Dark Gray */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    transition:0.3s;
+}
+
+.dark-mode .top-bar {
+    background-color: #c9c2c2; /* Dark Background */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff; /* White */
+    transition:0.3s;
+}
+
+.dark-mode .logo {
+    color: #000000; /* White */
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #ffffff; /* White */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #64ffda; /* Cyan */
+}
+
+.dark-mode .nav-links a {
+    color: #000000; /* White */
+}
+
+.dark-mode .nav-links a:hover {
+    color: #120352; /* Cyan */
+}
+
+.dark-mode-switch {
+    width: 50px;
+    height: 25px;
+    background-color: #424242; /* Dark Gray */
+    border-radius: 12.5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.dark-mode-switch::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #757575; /* Gray */
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.dark-mode-switch.dark-mode::before {
+    transform: translateX(25px);
+    background-color: #64ffda; /* Cyan */
+}
+
+a {
+    text-decoration:none;
+}
+
+.container {
+    padding: 20px;
+    position: relative;
+}
+
+.frame {
+    height: 50vh;
+    width: 25vw;
+    border-style: solid;
+    border-width:5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    background-image:url(me.jpg);
+    background-size:cover;
+}
+
+.description {
+    color: black; /* White */
+    text-align:center;
+}
+
+.description h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.dark-mode .description {
+    color:white;
+}
